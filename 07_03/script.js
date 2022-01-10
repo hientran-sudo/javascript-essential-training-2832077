@@ -18,3 +18,10 @@ console.log(backpackContents);
 //   }
 // });
 // console.log("longItems:", longItems);
+
+let array = ["b","c","a", "j"];
+array.unshift(array.pop());
+console.log(array);//move last item to the beginning of an array
+let remove = "j";
+array.splice(array.indexOf(remove),1)
+console.log(`array with "${remove}" removed:`,array);//array with "j" removed: (3) ['b', 'c', 'a']
